@@ -1,0 +1,34 @@
+{
+  "name": "ttt",
+  "version": "0.1.0",
+  "description": "Transparent Transcription Translator",
+  "main": "build/main.js",
+  "scripts": {
+    "compile": "tsc && copyfiles -f index.html build",
+    "start": "npm run compile && cross-env DEBUG=true electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoUnique/ttt.git"
+  },
+  "keywords": [
+    "transparent",
+    "transcription",
+    "translation",
+    "translator",
+    "translate"
+  ],
+  "author": "NoUnique",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NoUnique/ttt/issues"
+  },
+  "homepage": "https://github.com/NoUnique/ttt#readme",
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "cross-env": "^7.0.3",
+    "electron": "^20.2.0",
+    "electron-builder": "^23.3.3",
+    "typescript": "^4.8.3"
+  }
+}
